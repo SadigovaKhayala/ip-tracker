@@ -1,0 +1,161 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif !important;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.patent-bg {
+  background-image: url('images/pattern-bg.png');
+  width: 100%;
+  height: 260px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+}
+.search .input {
+  width: 450px;
+  border: 1px solid black;
+  height: 100%;
+}
+.search .input input {
+  width: 435px;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+.search .btn {
+  width: 50px;
+  background-color: black;
+  height: 100%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+.absolute {
+  position: absolute;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  bottom: -3.3rem;
+  width: 70%;
+  min-height: 100px;
+}
+.absolute div {
+  border-right: 1px solid black;
+  text-align: center;
+  width: 100%;
+  min-height: 30px;
+  color: black;
+}
+.absolute div p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.absolute div h1 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .patent-bg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #map {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .absolute {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: -17rem;
+  }
+  .absolute div {
+    border-right: none;
+    min-height: 10px;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 95%;
+    height: 50px;
+  }
+  .search .input {
+    width: 90%;
+    border: 1px solid black;
+    height: 100%;
+  }
+  .search .input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+  .search .btn {
+    width: 50px;
+    background-color: black;
+    height: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+  }
+}
